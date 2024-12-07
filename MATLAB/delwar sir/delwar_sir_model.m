@@ -50,11 +50,11 @@ M=0.5;BI = 0.3;BE = 0.4;AE = 1+BE*BI;R=0.6;GR=4;GM=2;PR=0.71;EC=NDEX; S = 0.5;
 S0 = 1;K=0.5;SC=0.6;D = 2;BAR = 0.5;EPS = 0.6;ST = 0.5;STT= 0.5;NEBLA = 2.0;LAMB=.5;
 short=AE^2+BE^2;XX=1+D;
 
-RC = .1; FW = .5;
-M = .5; BI = 1.5; BE = 1.5;R = 0.6;EC = 0.3; GR = 8; GAMMA = 1;  AE = 1 + BE * BI; 
-GM = 6; PR = .71  ;S = 0.5; S0 = 1; K = .5; SC = .6;
-D = 2;EPS = NDEX; ST = .5; STT = .5;
-NEBLA = 2; LAMB = .8; short = AE ^ 2 + BE ^ 2; XX = 1 + D;
+% RC = .1; FW = .5;
+% M = .5; BI = 1.5; BE = 1.5;R = 0.6;EC = 0.3; GR = 8; GAMMA = 1;  AE = 1 + BE * BI; 
+% GM = 6; PR = .71  ;S = 0.5; S0 = 1; K = .5; SC = .6;
+% D = 2;EPS = NDEX; ST = .5; STT = .5;
+% NEBLA = 2; LAMB = .8; short = AE ^ 2 + BE ^ 2; XX = 1 + D;
     %options = bvpset('RelTol',0.0000001,'Stats','on')
     sol1=bvpinit(linspace(0,5,100),[0 0 0 0 0 0 0 0 0 0 0]);
     sol=bvp4c(@bvp2d,@bc2d,sol1);
